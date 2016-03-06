@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Luis Ferrer-Labarca</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body id="body">
+    <div id="container">
+        <div id="main">
+            <div>
+                <h1 class="border" id="title">Luis Ferrer-Labarca</h1>
+            </div>
+            <img src="images/pic.jpg" alt="A picture of myself" id="pic">
+            <h2 id="subtitle">
+                <span class="red">Hacker.</span> <span class="yellow">Designer.</span> <span class="blue">Entrepreneur.</span>
+            </h2>
+        </div>
+	<div id="info">
+		<div class="border box" id="contact">
+		    <div id="contact-info">
+      		        <h3>Contact me</h3>
+		        <p><b>Phone:</b> +1(404)422-62XX</p>
+		        <p><b>Email:</b> hello@ferrer.com</p>
+		    </div>
+		</div>
+		<br>
+		<div class="border box" id="projects">
+			<div id="projects-info">
+				<h3>My Projects</h3>
+				<a href="parkouratl">ParkourATL</a>
+			</div>
+		</div>
+	</div>
+    </div>
+    <script src="js/main.js"></script>
+    <script>
+	function centerVertically(elem) {
+
+		outerHeight = elem.clientHeight;
+		var inner = elem.firstChild.nextSibling;
+		innerHeight = inner.clientHeight;
+
+		var offset = (outerHeight - innerHeight)/2;
+		inner.style.marginTop = offset + "px";
+	}
+
+	document.addEventListener("DOMContentLoaded", function() {
+
+		var projects = document.getElementById("projects");
+		var contact = document.getElementById("contact");
+	
+		var newWidth = Math.max(contact.clientWidth, projects.clientWidth);
+	
+		contact.style.width = newWidth + "px";
+		projects.style.width = newWidth + "px";
+
+		centerVertically(projects);
+		centerVertically(contact)
+	});
+
+    </script>
+</body>
+</html>

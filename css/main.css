@@ -1,0 +1,119 @@
+@font-face {
+    
+    font-family: "Moon";
+    src: url("../fonts/moon.otf");
+}
+
+@font-face {
+    
+    font-family: "Museo";
+    src: url("../fonts/museo.otf");
+}
+
+body {
+    
+    background-color: #DEDEDE;
+    font-family: "Museo";
+    font-size: 1.1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    
+    font-family: "Moon";
+    margin: 0;
+}
+
+h3 {
+    
+    font-size: 1.3rem;
+}
+
+p:last-of-type {
+    
+    margin-bottom: 0;
+}
+
+#container {
+    
+    height: 100%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#pic {
+    
+    border-radius: 50%;
+    max-width: 20rem;
+    margin: 1.5rem 0;
+}
+
+#subtitle {
+    
+    width: 70%;
+    display: block;
+    margin: 0rem auto;
+}
+
+.row {
+    
+    width: 100%;
+}
+
+[class*='col-'] {
+    
+    float: left;
+    overflow: hidden;
+}
+
+.col-1-2 {
+    
+    width: 50%;
+}
+
+.col-1-3 {
+    
+    width: 33.33%;
+}
+
+#title {
+
+	display: inline-block;
+}
+
+#info {
+
+	margin-top: 2rem;
+}
+
+#projects {
+
+    top: 0;
+    line-height: 200%;
+}
+
+.box {
+
+    margin: 1rem 0;
+    display: inline-block;
+}
+
+.border {
+ 
+    border: 0.4rem solid #383D3B;
+    padding: 0.5rem 1rem;
+}
+
+.red {
+    
+    color: #FF1053;
+}
+
+.blue {
+    
+    color: #3C91E6;
+}
+
+.yellow {
+    
+    color: #FF9505;
+}

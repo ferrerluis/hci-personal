@@ -1,0 +1,6 @@
+@media screen and (max-aspect-ratio: 8/5) {
+	.main {
+
+		background-size: auto 100%;
+	}
+}

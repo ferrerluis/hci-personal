@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ParkourATL</title>
+	<link rel="stylesheet" type="text/css" href="fonts.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="media.css">
+</head>
+<body>
+	<div class="container">
+		<div class="main" id="main">
+			<div class="overlay">
+				<div id="main-info">
+					<h1>— ParkourATL —</h1>
+					<h2>Join the largest community of traceurs in Atlanta</h2>
+					<a class="button join-button" href="mailto:dummy@parkouratl.org">Join Us</a>
+					<div id="navbar">
+						<div class="col-1-3">
+							<a class="button inverted small navbar-item" href='#info'>Who We Are</a>
+						</div>
+						<div class="col-1-3">
+							<a class="button inverted small navbar-item" href="#what-pointer">What We Do</a>
+						</div>
+						<div class="col-1-3">
+							<a class="button inverted small navbar-item" href="#how-pointer">How We Do It</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="info">
+			<div class="item" id="who">
+				<div class="item-info">
+					<h2>Who we are</h2>
+					<p>
+						ParkourATL started as a group of 4 highschoolers that thought running and jumping around was cool. Now it is the largest community of hackers in the Atlanta Metropolitan Area. People from all races, ranging from highschoolers to 30-year-old veterans join us every weekend at several urban locations to enjoy the art of parokour and free-running. Our events gather the most extreme and exciting traceurs in the south. If you like adrenaline, love to run and exercise, and want to meet people with the same interests, ParkourATL has your back! You don't believe us? Keep reading!
+					</p>
+				</div>
+			</div>
+			<hr id="what-pointer">
+			<div class="item" id="what">
+				<div class="item-info">
+					<h2>What We Do</h2>
+					<p>
+						ParkourATL believes that we all learn by doing. We like getting adventurous people that will jump right into the action and get the best out of themselves! That is why every Saturday we hold meetups at four locations throughout the Atlanta Metropolitan Area: Marietta, Alpharetta, Doraville, and Decatur. We also host a big event the first Sunday of May and September, called The Peach Run, where hundreds of national and international traceurs attend in order to show off their skills to the rest of the world.
+					</p>
+				</div>
+			</div>
+			<hr id="how-pointer">
+			<div class="item" id="how">
+				<div class="item-info">
+					<h2>How We Do It</h2>
+					<p>
+						Everything we have achieved, we have done it through our community, and our community is perfect exactly as it is now: full of passionate people that aim high and run fast! Join our <a href="https://parkouratl.slack.com">Slack chat</a> to connect with all our members and get our latest news! Also, check our <a href="events">events page</a> to find more information about our meetups and other events. You can also find the best parkour tutorial videos on our <a href="gallery">gallery</a>, and rate and comment on them. Let ParkourATL be your guide through your life as a traceur in Atlanta!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="item" id="next">
+			<div class="item-info">
+				<a class="button join-button" href="mailto:dummy@parkouratl.org">Join Us</a>
+			</div>
+		</div>
+		<footer>
+			<p><a href="..">Luis Ferrer-Labarca</a> — CSC 4720</p>
+		</footer>
+	</div>
+	<script>
+
+		function arrange() {	
+
+			var main = document.getElementById("main");
+			var title = document.getElementById("main-info");
+
+			var offsetTitle = (main.clientHeight - title.clientHeight)/2
+			title.style.marginTop = offsetTitle + "px";
+
+			var items = document.getElementsByClassName("item");
+			
+			for (var i = 0; i < items.length; i++) {
+				var box = items[i];
+				var boxHeight = box.clientHeight;
+				var info = box.getElementsByClassName("item-info")[0]
+				var infoHeight = info.clientHeight;
+
+				var offset = (boxHeight - infoHeight)/2;
+				info.style.marginTop = offset + "px";
+				box.style.height = (boxHeight - offset) + "px";
+			}
+		}
+
+		document.addEventListener("DOMContentLoaded", arrange);
+
+		document.addEventListener("resize", arrange, false);
+	</script>
+</body>
+</html>

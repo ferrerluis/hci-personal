@@ -91,6 +91,11 @@ p:last-of-type {
     line-height: 200%;
 }
 
+#projects a {
+    
+    display: block;
+}
+
 .box {
 
     margin: 1rem 0;

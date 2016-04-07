@@ -1,0 +1,124 @@
+body {
+    
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+a {
+    
+    text-decoration: none;
+    color: #FFF;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+a:hover {
+
+    color: #CCC;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    
+    font-family: 'Roboto Slab';
+}
+
+h1 {
+    
+    text-align: center;
+}
+
+header {
+    
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+header .title {
+    
+    font-family: 'Roboto Slab';
+}
+
+.links .link {
+    
+    padding: 0 0.5rem;
+    font-family: 'Roboto Slab';    
+}
+
+.container.background {
+    
+    padding: 0;
+    background-image: url("../images/bg.jpg");
+    background-size: 100%;
+    background-position: center;
+}
+
+.container.background>*>* {
+
+    margin: 0;
+}
+
+.background .overlay {
+    
+    color: #FFF;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tagline {
+    
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.container {
+    
+    background-color: #EEE;
+    color: #222;
+    margin: 0;
+    padding: 2rem;
+}
+
+.container>* {
+    
+    margin: 0;
+}
+
+.container>section {
+    
+    display: flex;
+    padding: 1rem 0;
+    border-bottom: 0.1rem solid #222;
+}
+
+.container>section:last-child {
+
+    border-bottom: none;
+}
+
+.container>section:nth-child(even) {
+    
+    text-align: right;
+}
+
+.image img {
+    
+    border-radius: 0.2rem;
+}
+
+section>.info>h2 {
+    
+    margin-top: 0;
+}
+
+footer {
+    
+    padding: 1rem 2rem;
+    text-align: center;
+}

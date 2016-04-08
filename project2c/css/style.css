@@ -43,78 +43,71 @@ header {
 header .title {
     
     font-family: 'Roboto Slab';
+    font-size: 1.2rem;
 }
 
 .links .link {
     
     padding: 0 0.5rem;
-    font-family: 'Roboto Slab';    
 }
 
-.container.background {
+.main {
     
-    padding: 0;
-    background-image: url("../images/bg.jpg");
-    background-size: 100%;
-    background-position: center;
+    padding: 8rem 2rem;
 }
 
-.container.background>*>* {
-
-    margin: 0;
-}
-
-.background .overlay {
+.main #tagline {
     
-    color: #FFF;
-    padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-#tagline {
-    
-    font-size: 1.5rem;
     text-align: center;
 }
 
 .container {
     
-    background-color: #EEE;
+    background-color: #FFF;
     color: #222;
     margin: 0;
-    padding: 2rem;
+    padding: 0;
 }
 
 .container>* {
     
-    margin: 0;
+    /*margin: 0;*/
 }
 
 .container>section {
     
-    display: flex;
-    padding: 1rem 0;
-    border-bottom: 0.1rem solid #222;
-}
-
-.container>section:last-child {
-
-    border-bottom: none;
+    text-align: center;
+    padding: 2rem;
 }
 
 .container>section:nth-child(even) {
-    
-    text-align: right;
+
+    background-color: #EEE;
 }
 
-.image img {
+section h2 {
     
+    margin-top: 0;
+}
+
+section img {
+    
+    height: 20vw;
     border-radius: 0.2rem;
 }
 
-section>.info>h2 {
+section a.button {
     
-    margin-top: 0;
+    background-color: #222;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    margin-top: 10rem;
+}
+
+section a.button:hover {
+
+    color: #FFF;
+    background-color: #444;
 }
 
 footer {

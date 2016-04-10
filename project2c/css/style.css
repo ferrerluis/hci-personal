@@ -19,7 +19,7 @@ a {
 
 a:hover {
 
-    color: #CCC;
+    color: #BBB;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -53,12 +53,19 @@ header .title {
 
 .main {
     
-    padding: 8rem 2rem;
+    padding: 6rem 2rem;
 }
 
-.main #tagline {
+.main>* {
+    
+    margin: 0.7rem auto;
+}
+
+.main .description {
     
     text-align: center;
+    font-size: 1.5rem;
+    color: #AAA;
 }
 
 .container {
@@ -71,13 +78,13 @@ header .title {
 
 .container>* {
     
-    /*margin: 0;*/
+    margin: 0;
 }
 
 .container>section {
     
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 8rem;
 }
 
 .container>section:nth-child(even) {
@@ -98,10 +105,12 @@ section img {
 
 section a.button {
     
+    display: inline-block;
+    text-decoration: none;
+    color: #FFF;    
     background-color: #222;
     padding: 0.5rem 1rem;
     border-radius: 0.2rem;
-    margin-top: 10rem;
 }
 
 section a.button:hover {
@@ -110,8 +119,28 @@ section a.button:hover {
     background-color: #444;
 }
 
+section a {
+    
+    color: #222;
+    text-decoration: underline;
+}
+
+section a:hover {
+    
+    color: #777;
+}
+
 footer {
     
+    font-size: 0.9rem;
     padding: 1rem 2rem;
     text-align: center;
+}
+
+.disclaimer {
+    
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }

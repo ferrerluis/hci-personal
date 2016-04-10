@@ -1,0 +1,11 @@
+.video-wrapper {
+    
+    height: 20rem;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    
+    margin-top: -10rem;
+    width: 100%;
+}

@@ -1,0 +1,57 @@
+.container form {
+    
+    /*overflow: auto;*/
+}
+
+.form-group {
+    
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.form-group label, .form-group input {
+    
+    display: block;
+}
+
+.form-group label {
+    
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"], form textarea {
+    
+    width: 100%;
+    border: solid #222 0.1rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    font-family: "Open Sans";
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.col-1-2 {
+    
+    width: 49.5%;
+}
+
+.col-1 {
+    
+    width: 100%;
+}
+
+footer {
+    
+    clear: both;
+}

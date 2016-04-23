@@ -118,7 +118,38 @@ header .title {
     background-color: #EEE;
 }
 
-section h2 {
+section.content {
+    
+    text-align: justify;
+}
+
+section.comments {
+    
+    padding: 2rem 8rem;
+}
+
+section.comments .comment {
+    
+    text-align: justify;
+    border-bottom: 0.1rem solid #000;
+}
+
+section.comments .comment:last-child {
+    
+    border-bottom: none;
+}
+
+section.comments .comment .commenter {
+
+    margin-bottom: 0.5rem;
+}
+
+section.comments .comment .content {
+    
+    margin-top: 0.5rem;
+}
+
+section h2, section h1 {
     
     margin-top: 0;
 }
@@ -137,12 +168,13 @@ section a.button {
     background-color: #222;
     padding: 0.5rem 1rem;
     border-radius: 0.2rem;
+    cursor: pointer;
 }
 
 section a.button:hover {
 
     color: #FFF;
-    background-color: #444;
+    background-color: #555;
 }
 
 section a {

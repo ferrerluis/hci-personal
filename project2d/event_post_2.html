@@ -7,6 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 <body>
     <header>
@@ -21,36 +22,38 @@
     </header>
     
     <div class="main">
-        <h1 id="title">We hang out. Come join us.</h1>
-        <p class="description">Learn about our upcoming events.</p>
+        <h1 id="title">The Peach Run</h1>
+        <p class="description">Dozens of people will freerun throughout the city, but only the fastest and nimblest will win!</p>
     </div>
         
     <div class="container">
         <section>
-            <h2>Decatur Meetup</h2>
-            <p>
-                Come join us for our weekly meetup in Downtown Decatur. Let's run a couple miles, meet new people, and learn some new tricks!
-            </p>
-            <p>
-                <b>Location:</b> <a target="_blank" href="https://www.google.com/maps/place/138+E+Court+Square,+Decatur,+GA+30030/@33.7747641,-84.2961654,19z/data=!3m1!4b1!4m2!3m1!1s0x88f5073e6e0bf0a5:0x90f193bce3690965">Downtown Decatur Court Square</a>.
-                <br>
-                <b>Date &amp; Time:</b> Saturday, April 9th. 3 PM.
-            </p>
-            <a class="button" href="event_post_1.html">Details</a>
-        </section>
-        <section>
-            <h2>The Peach Run</h2>
-            <p>
-                Are you up to the challenge? The Peach Run is our biyearly staple event, where people from all across the nation and overseas come to compete
-                and take home the Golden Peach. You can come as a viewer or a participant. Dozens of people will freerun throughout the city, but only the fastest
-                and nimblest will win!  
-            </p>
+            <h2>Details</h2>
             <p>
                 <b>Location:</b> <a target="_blank" href="https://www.google.com/maps/place/Noguchi+Playground/@33.7848065,-84.3798508,17z/data=!3m1!4b1!4m2!3m1!1s0x88f50440dc218f33:0x9233e15ff526cbb1">Piedmont Park: Noguchi Playground</a>.
                 <br>
                 <b>Date &amp; Time:</b> Sunday, May 1st. 2 PM.
             </p>
-            <a class="button" href="event_post_2.html">Details</a>
+        </section>
+        <section>
+            <form action="#">
+                <div class="form-group col-1-2">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="e.g. Steve">
+                </div>
+                <div class="form-group col-1-2">
+                    <label for="email">Email address</label>
+                    <input type="text" name="email" id="email" placeholder="e.g. stevejobs@gmail.com">
+                </div>
+                <a href="rsvp_sent.html" class="button">RSVP</a>
+            </form>
+        </section>
+        <section class="map" id="map-overlay">
+            <iframe id="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.065505688592!2d-84.37985078479781!3d33.78480653922333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50440dc218f33%3A0x9233e15ff526cbb1!2sNoguchi+Playground!5e0!3m2!1sen!2sus!4v1461455952207"></iframe>
+        </section>
+        <section>
+            <h2>Questions?</h2>
+            <a class="button" href="contact.html">Contact us</a>
         </section>
     </div>
     
@@ -61,5 +64,7 @@
             The multimedia used in this website does not belong to Luis, and it is not affiliated with the HCI class or GSU in any way.
         </p>
     </footer>
+
+    <script src="js/event.js"></script>
 </body>
 </html>

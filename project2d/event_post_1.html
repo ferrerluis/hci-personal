@@ -23,27 +23,17 @@
     
     <div class="main">
         <h1 id="title">Decatur Meetup</h1>
+        <p class="description">Come join us for our weekly meetup in Downtown Decatur. Let's run a couple miles, meet new people, and learn some new tricks!</p>
     </div>
         
     <div class="container">
-        <section class="content">
+        <section>
+            <h2>Details</h2>
             <p>
-                Whether you are a master traceur or a beginner, you have probably struggled with this
-                vault a lot. Our best traceurs on site put up this great article with video and explanatory
-                images to help you master this vault in no time!
+                <b>Location:</b> <a target="_blank" href="https://www.google.com/maps/place/138+E+Court+Square,+Decatur,+GA+30030/@33.7747641,-84.2961654,19z/data=!3m1!4b1!4m2!3m1!1s0x88f5073e6e0bf0a5:0x90f193bce3690965">Downtown Decatur Court Square</a>.
+                <br>
+                <b>Date &amp; Time:</b> Saturday, April 9th. 3 PM.
             </p>
-        </section>
-        <section class="comments" id="comments">
-            <h1>Comments</h1>
-            
-            <div class="comment">
-                <h3 class="commenter">Luis Ferrer</h3>
-                <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="comment">
-                <h3 class="commenter">Ahmed Reshit</h3>
-                <p class="content">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>                
-            </div>   
         </section>
         <section>
             <form action="#">
@@ -52,15 +42,18 @@
                     <input type="text" name="name" id="name" placeholder="e.g. Steve">
                 </div>
                 <div class="form-group col-1-2">
-                    <label for="email">Email address <i>(optional)</i></label>
+                    <label for="email">Email address</label>
                     <input type="text" name="email" id="email" placeholder="e.g. stevejobs@gmail.com">
                 </div>
-                <div class="form-group col-1">
-                    <label for="comment">Comment</label>
-                    <textarea name="comment" id="comment"></textarea>
-                </div>
-                <a class="button" id="submitButton">Submit</a>
+                <a href="rsvp_sent.html" class="button">RSVP</a>
             </form>
+        </section>
+        <section class="map" id="map-overlay">
+            <iframe id="map-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d829.1135915803526!2d-84.29616407079487!3d33.77476299879264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5073e6e0bf0a5%3A0x90f193bce3690965!2s138+E+Court+Square%2C+Decatur%2C+GA+30030!5e0!3m2!1sen!2sus!4v1461452113210"></iframe>
+        </section>
+        <section>
+            <h2>Questions?</h2>
+            <a class="button" href="contact.html">Contact us</a>
         </section>
     </div>
     
@@ -72,6 +65,6 @@
         </p>
     </footer>
 
-    <script src="js/comments.js"></script>
+    <script src="js/event.js"></script>
 </body>
 </html>

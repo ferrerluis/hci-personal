@@ -188,6 +188,19 @@ section a:hover {
     color: #777;
 }
 
+section.map {
+    
+    padding: 0;
+}
+
+section.map iframe {
+    
+    pointer-events: none;
+    border: none;
+    height: 20rem;
+    width: 100%;
+}
+
 footer {
     
     font-size: 0.9rem;

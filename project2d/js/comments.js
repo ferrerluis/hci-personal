@@ -17,12 +17,12 @@ function submitComment() {
     commentDiv.appendChild(commentName);
     commentDiv.appendChild(commentContent);
     
-    if (name.value !== "" &&
-        comment.value !== "") { 
+    if (name.value !== "" && comment.value !== "") { 
+            
         var comments = document.getElementById("comments");
         comments.appendChild(commentDiv);
         
-        comment.value = "";        
+        comment.value = "";
     }    
 }
 

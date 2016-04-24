@@ -32,7 +32,7 @@ h1 {
     text-align: center;
 }
 
-.test-warn {
+.warn {
     
     color: #f4dad7;
     font-size: 1rem;
@@ -41,19 +41,19 @@ h1 {
     padding: 0.5rem 0;
 }
 
-.test-warn p {
+.warn p {
     
     text-align: center;
     margin: 0;
 }
 
-.test-warn a {
+.warn a {
     
     color: #f4dad7;    
     text-decoration: underline;
 }
 
-.test-warn a:hover {
+.warn a:hover {
 
     color: #FFF;
 }
@@ -70,6 +70,11 @@ header .title {
     
     font-family: 'Roboto Slab';
     font-size: 1.2rem;
+}
+
+.links {
+    
+    text-align: right;
 }
 
 .links .link {
@@ -123,6 +128,11 @@ section.content {
     text-align: justify;
 }
 
+section .details {
+    
+    text-align: center;
+}
+
 section.comments {
     
     padding: 2rem 8rem;
@@ -156,7 +166,7 @@ section h2, section h1 {
 
 section img {
     
-    height: 20vw;
+    width: 40vw;
     border-radius: 0.2rem;
 }
 
@@ -190,7 +200,7 @@ section a:hover {
 
 section.map {
     
-    padding: 0;
+    padding: 0 !important;
 }
 
 section.map iframe {
@@ -214,4 +224,49 @@ footer {
     color: #777;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+}
+
+@media (max-width: 750px) {
+
+    body {
+        
+        font-size: 1rem;
+    }
+    
+    .main {
+        
+        padding: 2rem 1rem;        
+    }
+    
+    .col-1-2 {
+        
+        width: 100% !important;
+    }
+    
+    .container>section {
+        
+        padding: 1.5rem 1rem;
+    }
+    
+    section p {
+        
+        text-align: justify;
+    }
+    
+    form input[type="text"], form textarea {
+    
+        font-size: 0.9rem !important;
+    }
+    
+    section img {
+        
+        width: 80vw;
+        height: auto;
+        border-radius: 0.2rem;
+    }
+    
+    .warn {
+        
+        display: none;
+    }
 }

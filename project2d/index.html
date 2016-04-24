@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="test-warn">
+    <div class="warn">
         <p>
-            Check what people are saying about our website! <a href="test.html">Tester's reviews</a> 
+            We are responsive now! Check our website from your smartphone!
         </p>
     </div>
     
@@ -69,18 +69,21 @@
     
     <script src="js/substituteteacher.min.js"></script>
     <script>
-        var opts = {
-            containerId: "tagline",
-            namespace: "tagline",
-            interval: 3000
-        };
-        
-        var sub = new Sub([
-            "Freerunning through Atlanta since 2010",
-            "Jumping through Atlanta since 2010",
-            "Racing through Atlanta since 2010",
-            "Meeting traceurs in Atlanta since 2010"
-        ], opts).run();
+        if (window.innerWidth > 750) {
+            
+            var opts = {
+                containerId: "tagline",
+                namespace: "tagline",
+                interval: 3000
+            };
+
+            var sub = new Sub([
+                "Freerunning through Atlanta since 2010",
+                "Jumping through Atlanta since 2010",
+                "Racing through Atlanta since 2010",
+                "Meeting traceurs in Atlanta since 2010"
+            ], opts).run();   
+        }
     </script>
 </body>
 </html>

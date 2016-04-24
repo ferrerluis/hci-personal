@@ -9,3 +9,18 @@
     margin-top: -10rem;
     width: 100%;
 }
+
+@media (max-width: 750px) {
+
+    .video-wrapper {
+     
+        height: auto;
+    }
+
+    .video-wrapper video {
+    
+        margin-top: 0;
+        margin-left: -50vw;
+        width: 150%;
+    }
+}
